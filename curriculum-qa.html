@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>108 課綱科技領域綱要內涵 Q&A</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header lesson-header">
+      <div>
+        <p class="eyebrow">Curriculum Q&A</p>
+        <h1>108 課綱科技領域綱要內涵 Q&A</h1>
+        <p class="lead">
+          從常見問答理解科技領域為何設立、如何修訂，以及生活科技與資訊科技在 108 課綱中的學習重點。
+        </p>
+      </div>
+      <nav class="site-nav" aria-label="主要導覽">
+        <a href="index.html">回首頁</a>
+        <a href="#qa">開始問答</a>
+        <a href="#quiz">學習挑戰</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="lesson-overview" aria-labelledby="overview-title">
+        <div>
+          <h2 id="overview-title">本頁學習目標</h2>
+          <p>
+            本教材依據 CIRN 國民中小學課程與教學資源整合平臺「領域綱要－科技」問答集改寫，協助學生掌握科技領域課程綱要的核心脈絡。
+          </p>
+        </div>
+        <ul class="learning-goals">
+          <li>說明科技領域獨立設立的原因。</li>
+          <li>區辨生活科技與資訊科技的課程重點。</li>
+          <li>理解科技領域課綱修訂的原則與歷程。</li>
+        </ul>
+      </section>
+
+      <section class="concept-strip" aria-label="關鍵概念">
+        <article>
+          <span>核心定位</span>
+          <strong>科技素養</strong>
+        </article>
+        <article>
+          <span>生活科技</span>
+          <strong>做、用、想</strong>
+        </article>
+        <article>
+          <span>資訊科技</span>
+          <strong>運算思維</strong>
+        </article>
+        <article>
+          <span>學習取向</span>
+          <strong>實作與問題解決</strong>
+        </article>
+      </section>
+
+      <section id="qa" class="section-block" aria-labelledby="qa-title">
+        <div class="section-heading-row">
+          <div>
+            <h2 id="qa-title">互動 Q&A</h2>
+            <p>選擇主題後展開題目，閱讀重點摘要，再用「我已理解」記錄學習進度。</p>
+          </div>
+          <div class="progress-box" aria-live="polite">
+            <span>完成進度</span>
+            <strong id="progress-count">0 / 10</strong>
+          </div>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="問答主題篩選">
+          <button class="filter-button active" type="button" data-filter="all">全部</button>
+          <button class="filter-button" type="button" data-filter="background">設立背景</button>
+          <button class="filter-button" type="button" data-filter="curriculum">課程理念</button>
+          <button class="filter-button" type="button" data-filter="life-tech">生活科技</button>
+          <button class="filter-button" type="button" data-filter="info-tech">資訊科技</button>
+          <button class="filter-button" type="button" data-filter="revision">研修歷程</button>
+        </div>
+
+        <div id="qa-list" class="qa-list"></div>
+      </section>
+
+      <section id="quiz" class="section-block quiz-layout" aria-labelledby="quiz-title">
+        <div>
+          <h2 id="quiz-title">學習挑戰</h2>
+          <p>
+            完成 Q&A 後，試著判斷下列敘述最接近哪一個課綱重點。答題後會立即顯示回饋。
+          </p>
+        </div>
+        <div class="quiz-panel">
+          <p id="quiz-question" class="quiz-question"></p>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+          <button id="next-question" type="button">下一題</button>
+        </div>
+      </section>
+
+      <section class="source-note" aria-labelledby="source-title">
+        <h2 id="source-title">資料來源</h2>
+        <p>
+          本頁內容依據教育部國民及學前教育署 CIRN「十二年國教課程綱要問答集－領域綱要－科技」改寫整理。
+          原始資料請參見
+          <a href="https://cirn.k12ea.gov.tw/TWELVE/faq_page.aspx?fid=10984" target="_blank" rel="noreferrer">CIRN 問答集頁面</a>。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>TD 互動教材專案，108 課綱科技領域教材分頁。</p>
+    </footer>
+
+    <script src="curriculum-qa.js"></script>
+  </body>
+</html>

@@ -28,9 +28,9 @@ a {
 
 .site-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 1fr;
   gap: 32px;
-  align-items: end;
+  align-items: start;
   padding: 56px clamp(20px, 6vw, 80px) 40px;
   background: #e7eee8;
   border-bottom: 1px solid var(--line);
@@ -55,9 +55,15 @@ p {
 h1 {
   max-width: 760px;
   margin-bottom: 16px;
-  font-size: clamp(2rem, 5vw, 4.25rem);
+  font-size: clamp(1.85rem, 4vw, 3.1rem);
   line-height: 1.15;
   letter-spacing: 0;
+}
+
+.home-header h1 {
+  max-width: none;
+  margin-bottom: 0;
+  white-space: nowrap;
 }
 
 h2 {
@@ -83,7 +89,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .site-nav a,
@@ -485,7 +491,12 @@ button:hover {
 }
 
 @media (max-width: 560px) {
+  .home-header h1 {
+    font-size: clamp(1.35rem, 7vw, 1.8rem);
+  }
+
   .concept-strip {
     grid-template-columns: 1fr;
   }
 }
+

@@ -619,3 +619,225 @@ button:hover {
   }
 }
 
+
+.source-header {
+  background-image: linear-gradient(90deg, rgba(13, 35, 32, 0.9) 0%, rgba(13, 35, 32, 0.72) 48%, rgba(13, 35, 32, 0.34) 100%), url("assets/images/curriculum-concept.png");
+}
+
+.source-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+  gap: 28px;
+  align-items: stretch;
+  padding: 38px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.source-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.source-stats article {
+  padding: 18px;
+  border: 1px solid rgba(220, 227, 220, 0.86);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #fff, #f8faf5);
+  box-shadow: 0 10px 26px rgba(23, 35, 33, 0.06);
+}
+
+.source-stats span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.source-stats strong {
+  display: block;
+  color: var(--primary-dark);
+  font-size: 1.55rem;
+  line-height: 1.25;
+}
+
+.source-controls {
+  display: grid;
+  gap: 14px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.source-search-label {
+  font-size: 1rem;
+}
+
+.source-search {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+  box-shadow: 0 8px 20px rgba(23, 35, 33, 0.04);
+}
+
+.source-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.source-filter {
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+}
+
+.source-filter.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+
+.source-list-section {
+  padding: 38px 0 0;
+}
+
+.source-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.source-item {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+  padding: 18px;
+  border: 1px solid rgba(220, 227, 220, 0.86);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 30px rgba(23, 35, 33, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.source-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(23, 103, 94, 0.34);
+  box-shadow: var(--shadow);
+}
+
+.file-mark {
+  display: grid;
+  min-height: 76px;
+  place-items: center;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.file-mark.pdf {
+  background: linear-gradient(160deg, #c55c32, #8f341d);
+}
+
+.file-mark.doc {
+  background: linear-gradient(160deg, #17675e, #103f3a);
+}
+
+.source-body h3 {
+  margin-bottom: 8px;
+  font-size: 1.12rem;
+  line-height: 1.4;
+}
+
+.source-body p {
+  margin-bottom: 14px;
+  color: var(--muted);
+}
+
+.source-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.source-group,
+.source-size {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+}
+
+.source-group {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.source-size {
+  background: #f3eee4;
+  color: #805020;
+}
+
+.source-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.source-link.primary {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+
+.source-link:hover {
+  border-color: var(--primary-dark);
+}
+
+.source-item[hidden] {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .source-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .source-item {
+    grid-template-columns: 1fr;
+  }
+
+  .file-mark {
+    width: 76px;
+  }
+}
+
+@media (max-width: 560px) {
+  .source-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
